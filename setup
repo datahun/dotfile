@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 file_path=`pwd`
 home_path=$HOME"/"
@@ -39,6 +39,9 @@ do
 
     ln $file_name $file_old
 done
+
+source ~/.profile
+#source ~/.vimrc
 
 echo "done"
 
