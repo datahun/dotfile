@@ -22,10 +22,11 @@ set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nu
 
 set nocompatible
 filetype off
-
+syntax on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
