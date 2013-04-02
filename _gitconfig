@@ -6,3 +6,10 @@
 	status = auto
 	branch = auto
 	log = auto
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	df = diff
+	lg = log -p
+    br = branch
