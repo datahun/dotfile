@@ -13,3 +13,5 @@
 	df = diff
 	lg = log -p
     br = branch
+[core]
+	pager = less -XRMSI 
