@@ -41,14 +41,18 @@ do
 done
 
 source ~/.profile
-#source ~/.vimrc
 
-vundle_file="~/.vim/bundle/vundle"
+vundle_file=$HOME"/.vim/bundle/vundle"
 vundle_git="http://github.com/gmarik/vundle.git"
 
-if [ -d $vundle_file ]; then
+if [ -e $vundle_file ]; then
+    echo "Vundle existed"
+else
+    echo "git clone" $vundle_git $vundle_file
     git clone $vundle_git $vundle_file
 fi
+
+vim -c 'BundleInstall' -c 'q' -c 'q'
 
 echo "done"
 
