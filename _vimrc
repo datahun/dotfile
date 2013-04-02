@@ -22,3 +22,12 @@ set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'

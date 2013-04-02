@@ -43,5 +43,12 @@ done
 source ~/.profile
 #source ~/.vimrc
 
+vundle_file="~/.vim/bundle/vundle"
+vundle_git="http://github.com/gmarik/vundle.git"
+
+if [ -d $vundle_file ]; then
+    git clone $vundle_git $vundle_file
+fi
+
 echo "done"
 
